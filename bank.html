@@ -17,15 +17,15 @@
             <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
                 <div class="bg-green-400 p-8 rounded-xl">
                     <h4 class="text-2xl">Deposit</h4>
-                    <h2 class="text-5xl">$000</h2>
+                    <h2 class="text-5xl">$<span id="deposit-total">000</span></h2>
                 </div>
                 <div class="bg-red-400 p-8 rounded-xl">
                     <h4 class="text-2xl">Withdraw</h4>
-                    <h2 class="text-5xl">$000</h2>
+                    <h2 class="text-5xl">$<span id="withdraw-total">000</span></h2>
                 </div>
                 <div class="bg-orange-400 p-8 rounded-xl">
                     <h4 class="text-2xl">Balance</h4>
-                    <h2 class="text-5xl">$1250</h2>
+                    <h2 class="text-5xl">$<span id="balance">1250</span></h2>
                 </div>
             </div>
         </section>
@@ -34,16 +34,18 @@
             <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white">
                 <div class="bg-fuchsia-400 p-8 rounded-xl flex flex-col gap-4">
                     <h4 class="text-2xl">Please Deposit</h4>
-                    <input type="number" id="deposit" class="input input-primary block w-9/12 text-black" placeholder="$ Your Deposit">
+                    <input type="number" id="deposit" class="input input-primary block w-9/12 text-black" min="0" placeholder="$ Your Deposit">
                     <input type="submit" value="Deposit" class="btn bg-fuchsia-600 w-1/3 text-white" id="btn-deposit">
                 </div>
                 <div class="bg-red-400 p-8 rounded-xl flex flex-col gap-4">
                     <h4 class="text-2xl">Please Withdraw</h4>
-                    <input type="number" id="withdraw" class="input input-primary block w-9/12 text-black" placeholder="$ Your Withdraw">
+                    <input type="number" id="withdraw" class="input input-primary block w-9/12 text-black" min="0" placeholder="$ Your Withdraw">
                     <input type="submit" value="Withdraw" class="btn bg-red-600 w-1/3 text-white" id="btn-withdraw">
                 </div>    
         </section>
     </main>
-    
+    <script src="./scripts/deposit.js"></script>
+    <script src="./scripts/withdraw.js"></script>
+    <script src="./scripts/balance.js"></script>
 </body>
 </html>
