@@ -1,3 +1,3 @@
 # DOM BANK
 
-First front-end project to add javaScipt to make it interactive.
+First front-end project to add js to make it interactive.
