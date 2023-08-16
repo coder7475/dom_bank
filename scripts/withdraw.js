@@ -1,5 +1,5 @@
 document.getElementById('btn-withdraw').addEventListener('click', () => {
-    const withdraw = document.getElementById('withdraw').value;
+    const withdraw = getInputValue('withdraw');
     const total = getInnerText('withdraw-total');
     const currentBalance = getInnerText('balance');
     // clear the field

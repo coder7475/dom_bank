@@ -1,5 +1,5 @@
 document.getElementById('btn-deposit').addEventListener('click', () => {
-    const deposit = document.getElementById('deposit').value;
+    const deposit = getInputValue('deposit');
     const total = getInnerText('deposit-total');
     const currentBalance = getInnerText('balance');
 
